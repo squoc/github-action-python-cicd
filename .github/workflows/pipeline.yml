@@ -1,0 +1,21 @@
+name: Pipeline
+
+on: [push]
+
+env:
+  APP_NAME: my_app
+
+jobs:
+  lint:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: checkout the code
+        uses: actions/checkout@v1
+
+      - name: echo
+        run: env; pwd
+
+
+
+    
