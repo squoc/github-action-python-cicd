@@ -24,7 +24,7 @@ jobs:
       - name: lint code
         run: |
           flake8 --ignore=E501,E231 *.py
-          pylint --disable=C0301 --disable=C0326 *.py
+          pylint --disable=C0301 --disable=W1514 --disable=R1732 *.py
 
       - name: run unit test
         run: |
