@@ -3,7 +3,7 @@ name: Pipeline
 on: [push]
 
 env:
-  APP_NAME: my_app
+  APPLICATION_NAME: my_app
 
 jobs:
   lint:
