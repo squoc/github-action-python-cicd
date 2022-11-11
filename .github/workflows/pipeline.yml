@@ -17,16 +17,16 @@ jobs:
         uses: actions/setup-python@v4.3.0
 
       - name: install requirements
-        run: pip install --quiet -r requirements.txt
+        run: python --verion; pip --version
       
-      - name: lint code
-        run: |
-          flake8 --ignore=E501,E231 *.py
-          pylint --disable=C0301 --disable=C0326 *.py
+      # - name: lint code
+      #   run: |
+      #     flake8 --ignore=E501,E231 *.py
+      #     pylint --disable=C0301 --disable=C0326 *.py
 
-      - name: run unit test
-        run: |
-          python -m unittest --verbose --failfast
+      # - name: run unit test
+      #   run: |
+      #     python -m unittest --verbose --failfast
 
 
 
