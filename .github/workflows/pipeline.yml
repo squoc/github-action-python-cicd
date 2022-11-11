@@ -15,9 +15,11 @@ jobs:
 
       - name: set up python environment
         uses: actions/setup-python@v4.3.0
-
+        with:
+          python-version: '3.10'
+  
       - name: install requirements
-        run: python --verion; pip --version
+        run: python --version
       
       # - name: lint code
       #   run: |
